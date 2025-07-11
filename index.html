@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nazario | Fashion & Lifestyle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>NAZARIO</h1>
+    <div class="header-buttons">
+      <button>Favorites</button>
+      <button onclick="togglePopup()">Login</button>
+    </div>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search...">
+  </div>
+
+  <section class="hero">
+    <h2>Discover Your Style</h2>
+    <p>Fashion that defines you</p>
+    <img src="https://via.placeholder.com/600x300" alt="Lifestyle image">
+  </section>
+
+  <section class="filters">
+    <select><option>Category</option><option>Men</option><option>Women</option></select>
+    <select><option>Price</option><option>Low to High</option><option>High to Low</option></select>
+    <select><option>Size</option><option>S</option><option>M</option><option>L</option></select>
+  </section>
+
+  <section class="product-grid">
+    <div class="product-card">
+      <h3>T-Shirt</h3>
+      <p>$20</p>
+      <div class="stars">★★★★☆</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <h3>Jeans</h3>
+      <p>$40</p>
+      <div class="stars">★★★★★</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <h3>Jacket</h3>
+      <p>$60</p>
+      <div class="stars">★★★☆☆</div>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+
+  <div class="cart-icon">🛒</div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>Sign In</h2>
+      <input type="text" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button>Login</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>About Us | Contact Us | Terms & Conditions</p>
+  </footer>
+
+  <script>
+    function togglePopup() {
+      document.getElementById('popup').classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
