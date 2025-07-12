@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nazario | Fashion & Lifestyle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>NAZARIO</h1>
+    <div class="header-buttons">
+      <button>Favorites</button>
+      <button>Cart</button>
+      <button onclick="togglePopup()">Login</button>
+      <button onclick="togglePopup()">Register</button>
+    </div>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search...">
+  </div>
+
+  <section class="hero">
+    <h2>Discover Your Style</h2>
+    <p>Fashion that defines you</p>
+    <img src="images/1000260995.png" alt="Cover Your Style">
+    <style>
+      .hero img {
+        width: 1000px;
+        height: 600px;
+        object-fit: cover;
+      }
+    </style>
+  </section>
+
+  <section class="filters">
+    <select><option>Category</option><option>Men</option><option>Women</option></select>
+    <select><option>Price</option><option>Low to High</option><option>High to Low</option></select>
+    <select><option>Size</option><option>S</option><option>M</option><option>L</option></select>
+  </section>
+
+  <section class="product-grid">
+    <div class="product-card">
+      <h3>T-Shirt</h3>
+      <img src="images/nazario-product.png" alt="Stylish T-Shirt" />
+      <style>
+        .product-card img {
+          width: 100%;
+          height: auto
+          object-fit: cover;
+        }
+      </style>
+    <h3>Signature Outfit</h3>
+      <p>Rs.2000</p>
+      <div class="stars">★★★★☆</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <h3>Jeans</h3>
+      <img src="images/jeens.png" alt="Stylish Jeans" />
+    <h3>Signature Outfit</h3>
+      <p>Rs.6000</p>
+      <div class="stars">★★★☆☆</div>
+      <button>Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+      <h3>Jacket</h3>
+      <img src="images/jackets.png" alt="Stylish Jacket" />
+    <h3>Signature Outfit</h3>
+      <p>Rs.6000</p>
+      <div class="stars">★★★☆☆</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <h3>Glasses</h3>
+      <img src="images/images.png" alt="Stylish Glasses" />
+    <h3>Signature Outfit</h3>
+      <p>Rs.1400</p>
+      <div class="stars">★★★☆☆</div>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+
+  <div class="cart-icon">🛒</div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>Sign In</h2>
+      <input type="text" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <h2>New User Registration</h2>
+      <input type="text" placeholder="First Name">
+      <input type="text" placeholder="Last Name">
+      <input type="text" placeholder="+91XXXXXXXXXX">
+      <input type="text" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button>Register</button>
+      <button>Cancel</button>
+      <button>Login</button>
+    </div>
+  
+  </div>
+  <footer>
+    <p>About Us | Contact Us | Terms & Conditions</p>
+  </footer>
+</body></div>
+
+  <script>
+    function togglePopup() {
+      document.getElementById('popup').classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
